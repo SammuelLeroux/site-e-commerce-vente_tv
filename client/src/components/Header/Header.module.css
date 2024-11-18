@@ -1,0 +1,89 @@
+.header {
+    padding-bottom: 2em;
+    background-color: #373737;
+}
+.header .containerHeader {
+    margin: 2em 3em;
+}
+
+.loginW{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.connexionBtn:nth-child(1) {
+    text-decoration: none;
+    color: black;
+}
+.connexionBtn:nth-child(1):hover {
+    color: #0d6efd;
+}
+
+.paginationW {
+    margin: auto;
+    transform: translateY(-50%);
+    width: 90%;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.pagination li {
+    padding: 0.625em 1.5em;
+    border: 0.0625em solid white;
+    background-color: black;
+    cursor: pointer;
+}
+.pagination li:first-child {
+    border-radius: 1em 0 0 1em;
+}
+.pagination li:nth-last-child(2) {
+    border-radius: 0 1em 1em 0;
+}
+.pagination li:last-child() {
+    width: 100%;
+}
+
+.formSearchOverlay {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.shopNotice {
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    top: 0;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    background-color: #ef3240;
+    color: #fff;
+    font-size: .75rem;
+}
+
+@media (max-width: 1024px) {
+    .header .containerHeader {
+        margin: 0;
+    }
+}

@@ -1,0 +1,81 @@
+.infoW {
+    font-size: 1.125em;
+}
+
+.infofxW {
+    display: flex;
+    flex-direction: row;
+}
+.infofxW section h5:first {
+    text-decoration: underline;
+}
+.infofxW h1 {
+    font-weight: bold;
+}
+.infofxW section {
+    width: 50%;
+    padding: 1.5em;
+}
+
+.priceW {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.priceW .price {
+    flex: 3;
+    font-size: 2em;
+    font-weight: bold;
+}
+.priceW .multiPaiement {
+    flex: 6;
+    width: 100%;
+    padding: 0.25em 1em;
+    font-size: 0.875em;
+    background-color: white;
+    font-weight: bold;
+}
+.priceW .multiPaiementBadge {
+    color: white;
+    background-color: green;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    border-radius: 50%;
+}
+
+.disponibilite {
+    margin-bottom: 2em;
+    padding: 0.75em;
+    background-color: white;
+}
+.disponibilite .stock {
+    color: green;
+    font-weight: bold;
+}
+
+.nbProductW {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.deliveryOption > div{
+    margin-top: 1.5em;
+}
+.deliveryOption span {
+    font-size: 0.75em;
+}
+
+@media (max-width: 1024px) {
+    .infofxW {
+        display: flex;
+        flex-direction: column;
+    }
+    .infofxW section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.FormLogin {
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.FormLogin h5 {
+    text-align: center;
+}
+
+.linkUp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

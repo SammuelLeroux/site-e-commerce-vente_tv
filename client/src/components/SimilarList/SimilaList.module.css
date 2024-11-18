@@ -1,0 +1,52 @@
+.listW {
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+    gap: 10px;
+}
+
+.similarListW {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.similarListW > :nth-child(n) {
+    width: calc(25% - 1em);
+}
+
+.productCard {
+    flex: 0 0 calc(25% - 1.5em);
+    margin-left: 2em;
+    transition: opacity 0.3s ease;
+}
+.productCard:nth-child(1) {
+    margin-left: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 1024px) {
+    .listW {
+        display: none;
+    }
+}

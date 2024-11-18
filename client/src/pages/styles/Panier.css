@@ -1,0 +1,232 @@
+Header
+
+.cart-header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #a2a2a2;
+    border-bottom:1px solid #f5deb382;
+    z-index: 2;
+}
+.cart-header-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.back-icon-box{
+    background-color: gray;
+    width: 100px;
+    position: relative;
+    transition: all 300ms;
+}
+.back-icon-box:hover{
+    opacity: .8;
+    transition: all 300ms;
+}
+.back-icon-box:active{
+    background-color: #313030;
+    transition: all 100ms;
+}
+.back-icon{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cart-logo-box{
+    height: 100%;
+    width: 200px;
+    z-index: 100;
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    margin-right: 5%;
+}
+.cart-logo-gattino{
+    width: auto;
+    height: 100%;
+}
+
+/* Navigation */
+
+.cart-nav{
+    padding-top: 120px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.cart-nav-ul{
+    display: flex;
+    font-size: 25px;
+    font-weight: 400; 
+}
+.cart-nav-li{
+    margin: auto 20px;
+    color: black;
+}
+.cart-nav-li[data-active]{
+    font-weight: bold;
+}
+
+/* Panier Elements */
+.cart-els-box{
+    margin: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Panier Total */
+
+.cart-prix-total-box{
+    font-size: 30px;
+}
+.prix-total{
+    color: var(--vert);
+}
+.prix-tva{
+    color: var(--vert);
+    font-size: 18px;
+}
+
+
+.cart-commande-btn{
+    background: var(--vert);
+    color: var(--blanc);
+    transition: all 300ms;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width:130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+.cart-commande-btn:hover{
+    background: var(--blanc);
+    color: var(--vert);
+    box-shadow: 0 0 0 2px var(--vert);
+    transition: all 300ms;
+}
+.cart-commande-btn:active{
+    transform: scale(.9);
+    transition: all 300ms;
+}
+
+/* Panier Vider */
+
+.cart-vider-btn{
+    background: var(--rouge);
+    color: var(--blanc);
+    transition: all 300ms;
+    font-weight: bold;
+    width:130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.cart-vider-btn:hover{
+    background: var(--blanc);
+    color: var(--rouge);
+    box-shadow: 0 0 0 2px var(--rouge);
+    transition: all 300ms;
+}
+.cart-vider-btn:active{
+    transform: scale(.9);
+    transition: all 300ms;
+}
+
+
+
+/* Panier Produits */
+
+.cart-produits-ul{
+    min-height: 31.4vh;
+}
+
+.cart-produit-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    margin: 30px auto;
+    max-width: 1200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.cart-produit-box span,
+.cart-produit-box strong{
+    display: block;
+}
+
+.cart-img-and-info{
+    height: 100%;
+    display: flex;
+    width: 60%;
+}
+.cart-img-and-info figure{
+    height: 100%;
+}
+.cart-produit-img{
+    width: 250px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.cart-produit-info{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.cart-options{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    position: relative;
+}
+
+.cart-plus-moins{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-plus,
+.cart-moins{
+    width: 30px;
+}
+
+.cart-quantite{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-supprimer{
+    width: 35px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cart-prix{
+    font-size: 25px;
+    color: var(--vert);
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart-prix small{
+    font-size: medium;
+    display: block;
+}
+
+.cart-vide{
+    height: 41vh;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

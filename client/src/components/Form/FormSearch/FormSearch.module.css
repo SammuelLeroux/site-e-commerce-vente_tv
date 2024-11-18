@@ -1,0 +1,30 @@
+.formSearch {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: auto;
+    width: 50%;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+.inputW {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.inputW:last-child {
+    margin-bottom: 0;
+}
+
+.inputSearch:nth-child(2n) {
+    margin-left: 1em;
+}
+
+@media (max-width: 1024px) {
+    .formSearch {
+        width: 85%;
+    }
+}
